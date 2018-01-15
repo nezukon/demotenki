@@ -11,7 +11,7 @@ authorization = lnetatmo.ClientAuth(
     clientId = neta_id,
     clientSecret = neta_pw,
     username = email,
-    password = pword,
+    password = std_pw,
     scope = ""
     )
 
@@ -68,7 +68,7 @@ print(r.text)
 server = db_server
 database = 'demo01'
 username = db_uname
-password = db_pword
+password = std_pw
 driver= '{ODBC Driver 13 for SQL Server}'
 cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
